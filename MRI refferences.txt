@@ -1,0 +1,36 @@
+LTTP: Long-Term Pavement Performance
+
+shrp: Strategic Highway Research Program
+
+MERRA: The Modern Era Retrospective-Analysis for Research and Applications (MERRA) was undertaken by NASA’s Global Modeling and Assimilation
+Office with two primary objectives: to place observations from NASA’s Earth Observing System satellites
+into a climate context and to improve upon the hydrologic cycle represented in earlier generations of reanalyses
+
+Real_Hum_AVG: Average relative humidity
+
+Freeze-thaw: weathering is a process of erosion that happens in cold areas where ice forms.
+A crack in a rock can fill with water which then freezes as the temperature drops. As the ice expands, it pushes the crack apart, making it larger
+
+AADTT_VEH_CLASS_9_TREND: Annual estimate of class 9 trucks in LTPP lane
+
+ANNUAL_ESAL_TREND: Annual estimated Equivalent Single Axle Load for class 4-13 trucks in LTPP lane
+
+
+
+25/3/2024
+Delelt the data that is before 1989 form all excle file
+cause the data of trageting variable is starting from the 1989
+Convert the excel file and their pages to CSV file 
+Read the data set using pandas data frame 
+check the sum of null value
+change the column name 'STATE_CODE_EXP' with "location"
+Reorder the columns with 'DATE' and 'LOCATION' first
+import matplotlib.pyplot as plt
+import seaborn as sns
+perform these task on dataset
+1- now on each data set, breakdown the data into (date & location) cause this is going to be our reference for the MRI Value and other targets in each table
+
+2- make some visualization for the data in reference to date & location so we can understand the distribution 
+
+3- note that: there is no redundant values, each record is uniqe
+4- find the correlation matrix for each data set
